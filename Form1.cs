@@ -11,10 +11,10 @@ using System.Windows.Forms;
 //Jeffrey Stanford Scruggs, 11/1/22 1:03AM
 //This color application will take me an 2 hours to build.
 //There will be 3 components.
-//Choose to Pimary colors and then mix them to make a secondary color or an error color.
-/// paused at 2:36PM
-/// start again 7:45
-/// Finshed project at 9:56!
+//Choose to Primary colors and then mix them to make a secondary color or an error color.
+/// paused at 2:36AM
+/// start again 11/1/22 7:45PM
+/// Finshed project at 11/1/22 9:56PM!
 namespace Primary_and_Secondary_Colors
 {
     public partial class Color : Form
@@ -25,10 +25,6 @@ namespace Primary_and_Secondary_Colors
             InitializeComponent();
         }
 
-        private void clicker(object sender, EventArgs e)
-        {
-            
-        }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
@@ -118,10 +114,10 @@ namespace Primary_and_Secondary_Colors
 
             else
             {
-                textBox3.Text = "Pick different colors!";
+                textBox3.Text = "Pick different or more colors!";
                 wrong = Image.FromFile("wrong.png");
                 pictureBox3.Image = wrong;
-                MessageBox.Show("You choose the same color! Pick different colors. =)");
+                MessageBox.Show("You choose the same color or only one color! Pick different or more colors. =)");
             }
         }
 

@@ -210,11 +210,12 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(915, 144);
+            this.textBox3.Location = new System.Drawing.Point(844, 144);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(232, 31);
+            this.textBox3.Size = new System.Drawing.Size(390, 31);
             this.textBox3.TabIndex = 14;
             this.textBox3.Text = "Result";
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // Color
