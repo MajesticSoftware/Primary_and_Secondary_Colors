@@ -28,38 +28,80 @@ namespace Primary_and_Secondary_Colors
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            red = Image.FromFile("red.png");
-            pictureBox1.Image = red;
+            try
+            {
+                red = Image.FromFile("red.png");
+                pictureBox1.Image = red;
+            }
+            catch
+            {
+                MessageBox.Show("Image not found!");
+            }
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            blue = Image.FromFile("blue.png");
-            pictureBox1.Image = blue;
+            try
+            {
+                blue = Image.FromFile("blue.png");
+                pictureBox1.Image = blue;
+            }
+            catch
+            {
+                MessageBox.Show("Image not found!");
+            }
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            yellow = Image.FromFile("yellow.png");
-            pictureBox1.Image = yellow;
+            try
+            {
+                yellow = Image.FromFile("yellow.png");
+                pictureBox1.Image = yellow;
+            }
+            catch
+            {
+                MessageBox.Show("Image not found!");
+            }
         }
 
         private void radioButton6_CheckedChanged(object sender, EventArgs e)
         {
-            red = Image.FromFile("red.png");
-            pictureBox2.Image = red;
+            try
+            {
+                red = Image.FromFile("red.png");
+                pictureBox2.Image = red;
+            }
+            catch
+            {
+                MessageBox.Show("Image not found!");
+            }
         }
 
         private void radioButton5_CheckedChanged(object sender, EventArgs e)
         {
-            blue = Image.FromFile("blue.png");
-            pictureBox2.Image = blue;
+            try
+            {
+                blue = Image.FromFile("blue.png");
+                pictureBox2.Image = blue;
+            }
+            catch
+            {
+                MessageBox.Show("Image not found!");
+            }
         }
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
-            yellow = Image.FromFile("yellow.png");
-            pictureBox2.Image = yellow;
+            try
+            {
+                yellow = Image.FromFile("yellow.png");
+                pictureBox2.Image = yellow;
+            }
+            catch
+            {
+                MessageBox.Show("Image not found!");
+            }
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -71,53 +113,102 @@ namespace Primary_and_Secondary_Colors
         {
             if (radioButton2.Checked == true & radioButton4.Checked == true)
             {
-                green = Image.FromFile("green.jpeg");
-                pictureBox3.Image = green;
-                textBox3.Text = "Green";
+                try
+                {
+                    green = Image.FromFile("green.jpeg");
+                    pictureBox3.Image = green;
+                    textBox3.Text = "Green";
+                }
+                catch
+                {
+                    MessageBox.Show("Image not found!");
+                }
             }
 
             else if (radioButton1.Checked == true & radioButton5.Checked == true)
             {
-                violet = Image.FromFile("violet.png");
-                pictureBox3.Image = violet;
-                textBox3.Text = "Violet";
+                try
+                {
+                    violet = Image.FromFile("violet.png");
+                    pictureBox3.Image = violet;
+                    textBox3.Text = "Violet";
+                }
+                catch
+                {
+                    MessageBox.Show("Image not found!");
+                }
             }
 
             else if (radioButton1.Checked == true & radioButton4.Checked == true)
             {
-                orange = Image.FromFile("orange.jpeg");
-                pictureBox3.Image = orange;
-                textBox3.Text = "Orange";
+                try
+                {
+                    orange = Image.FromFile("orange.jpeg");
+                    pictureBox3.Image = orange;
+                    textBox3.Text = "Orange";
+                }
+                catch
+                {
+                    MessageBox.Show("Image not found!");
+                }
             }
 
             else if (radioButton5.Checked == true & radioButton3.Checked == true)
             {
-                green = Image.FromFile("green.jpeg");
-                pictureBox3.Image = green;
-                textBox3.Text = "Green";
+                try
+                {
+                    green = Image.FromFile("green.jpeg");
+                    pictureBox3.Image = green;
+                    textBox3.Text = "Green";
+                }
+                catch
+                {
+                    MessageBox.Show("Image not found!");
+                }
             }
 
             else if (radioButton6.Checked == true & radioButton2.Checked == true)
             {
-                violet = Image.FromFile("violet.png");
-                pictureBox3.Image = violet;
-                textBox3.Text = "Violet";
+                try
+                {
+                    violet = Image.FromFile("violet.png");
+                    pictureBox3.Image = violet;
+                    textBox3.Text = "Violet";
+                }
+                catch
+                {
+                    MessageBox.Show("Image not found!");
+                }
             }
 
             else if (radioButton6.Checked == true & radioButton3.Checked == true)
             {
-                orange = Image.FromFile("orange.jpeg");
-                pictureBox3.Image = orange;
-                textBox3.Text = "Orange";
+                try
+                {
+                    orange = Image.FromFile("orange.jpeg");
+                    pictureBox3.Image = orange;
+                    textBox3.Text = "Orange";
+                }
+                catch
+                {
+                    MessageBox.Show("Image not found!");
+                }
             }
 
 
             else
             {
-                textBox3.Text = "Pick different or more colors!";
-                wrong = Image.FromFile("wrong.png");
-                pictureBox3.Image = wrong;
-                MessageBox.Show("You choose the same color or only one color! Pick different or more colors. =)");
+                try
+                {
+                    textBox3.Text = "Pick different or more colors!";
+                    wrong = Image.FromFile("wrong.png");
+                    pictureBox3.Image = wrong;
+                    MessageBox.Show("You choose the same color or only one color! Pick different or more colors. =)");
+                }
+                catch
+                {
+                    MessageBox.Show("Image not found!");
+                }
             }
         }
 
