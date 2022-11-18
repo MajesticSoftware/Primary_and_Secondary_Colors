@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -109,6 +110,40 @@ namespace Primary_and_Secondary_Colors
 
         }
 
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked_1(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void NumberGen_Click(object sender, EventArgs e)
+        {
+            Dynamite Dyno = new Dynamite();
+            this.Hide();
+            Dyno.Show();
+        }
+
+        private void menuStrip1_ItemClicked_2(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DynoMenu1_Click(object sender, EventArgs e)
+        {
+            Dynamite Dyno = new Dynamite();
+            this.Hide();
+            Dyno.Show();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (radioButton2.Checked == true & radioButton4.Checked == true)
@@ -205,9 +240,9 @@ namespace Primary_and_Secondary_Colors
                     pictureBox3.Image = wrong;
                     MessageBox.Show("You choose the same color or only one color! Pick different or more colors. =)");
                 }
-                catch
+                catch (FileNotFoundException t)
                 {
-                    MessageBox.Show("Image not found!");
+                    Console.WriteLine(t.Message);
                 }
             }
         }
