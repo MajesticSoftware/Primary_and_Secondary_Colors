@@ -54,7 +54,7 @@
             this.DynoMenu});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1122, 42);
+            this.menuStrip1.Size = new System.Drawing.Size(1122, 40);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -121,6 +121,7 @@
             this.Hard.TabIndex = 4;
             this.Hard.Text = "Hard 1-1000";
             this.Hard.UseVisualStyleBackColor = false;
+            this.Hard.Click += new System.EventHandler(this.Hard_Click);
             // 
             // Explode
             // 

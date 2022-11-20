@@ -42,7 +42,13 @@ namespace Primary_and_Secondary_Colors
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            timeLeft = 60;
+            TimerBox.Enabled = true;
+            Explode.Enabled = true;
+            Explode.Start();
+            Guess.Visible = true;
+            RandomE = rnd.Next(1, 100);
+            Console.WriteLine(RandomE.ToString());
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -133,6 +139,17 @@ namespace Primary_and_Secondary_Colors
             Color BackC = new Color();
             this.Hide();
             BackC.Show();
+        }
+
+        private void Hard_Click(object sender, EventArgs e)
+        {
+            timeLeft = 60;
+            TimerBox.Enabled = true;
+            Explode.Enabled = true;
+            Explode.Start();
+            Guess.Visible = true;
+            RandomE = rnd.Next(1, 1000);
+            Console.WriteLine(RandomE.ToString());
         }
     }
 }
