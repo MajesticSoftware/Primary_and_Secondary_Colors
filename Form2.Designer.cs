@@ -54,7 +54,7 @@
             this.DynoMenu});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1122, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(1122, 42);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -72,6 +72,7 @@
             this.CalcMenu2.Name = "CalcMenu2";
             this.CalcMenu2.Size = new System.Drawing.Size(359, 44);
             this.CalcMenu2.Text = "Calculator";
+            this.CalcMenu2.Click += new System.EventHandler(this.CalcMenu2_Click);
             // 
             // ColorMenu2
             // 

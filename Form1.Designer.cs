@@ -231,7 +231,7 @@
             this.menuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1246, 42);
+            this.menuStrip1.Size = new System.Drawing.Size(1246, 48);
             this.menuStrip1.TabIndex = 15;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked_2);
@@ -242,7 +242,7 @@
             this.DynoMenu1,
             this.CalculatorMenu1});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(161, 38);
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(161, 40);
             this.menuToolStripMenuItem.Text = "Color Menu";
             this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
             // 
@@ -258,6 +258,7 @@
             this.CalculatorMenu1.Name = "CalculatorMenu1";
             this.CalculatorMenu1.Size = new System.Drawing.Size(359, 44);
             this.CalculatorMenu1.Text = "Calculator";
+            this.CalculatorMenu1.Click += new System.EventHandler(this.CalculatorMenu1_Click);
             // 
             // Color
             // 

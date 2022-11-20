@@ -16,5 +16,42 @@ namespace Primary_and_Secondary_Colors
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void ColorMenu2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        
+
+        private void DynoCalc_Click(object sender, EventArgs e)
+        {
+            Dynamite DynoCalc = new Dynamite();
+            this.Hide();
+            DynoCalc.Show();
+        }
+
+        private void ColorCalc_Click(object sender, EventArgs e)
+        {
+            Color ColorCalc = new Color();
+            this.Hide();
+            ColorCalc.Show();
+        }
     }
 }

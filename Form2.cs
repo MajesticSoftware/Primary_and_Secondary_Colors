@@ -151,5 +151,12 @@ namespace Primary_and_Secondary_Colors
             RandomE = rnd.Next(1, 1000);
             Console.WriteLine(RandomE.ToString());
         }
+
+        private void CalcMenu2_Click(object sender, EventArgs e)
+        {
+            Calculator MenuCalc = new Calculator();
+            this.Hide();
+            MenuCalc.Show();
+        }
     }
 }

@@ -144,6 +144,13 @@ namespace Primary_and_Secondary_Colors
             Dyno.Show();
         }
 
+        private void CalculatorMenu1_Click(object sender, EventArgs e)
+        {
+            Calculator CalcApp = new Calculator();
+            this.Hide();
+            CalcApp.Show();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (radioButton2.Checked == true & radioButton4.Checked == true)
