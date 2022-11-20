@@ -53,5 +53,73 @@ namespace Primary_and_Secondary_Colors
             this.Hide();
             ColorCalc.Show();
         }
+
+        private void ZeroB_Click(object sender, EventArgs e)
+        {
+            CalcText.AppendText("0");
+        }
+
+        private void OneB_Click(object sender, EventArgs e)
+        {
+            CalcText.AppendText("1");
+        }
+
+        private void TwoB_Click(object sender, EventArgs e)
+        {
+            CalcText.AppendText("2");
+        }
+
+        private void ThreeB_Click(object sender, EventArgs e)
+        {
+            CalcText.AppendText("3");
+        }
+
+        private void FourB_Click(object sender, EventArgs e)
+        {
+            CalcText.AppendText("4");
+        }
+
+        private void FiveB_Click(object sender, EventArgs e)
+        {
+            CalcText.AppendText("5");
+        }
+
+        private void SixB_Click(object sender, EventArgs e)
+        {
+            CalcText.AppendText("6");
+        }
+
+        private void SevenB_Click(object sender, EventArgs e)
+        {
+            CalcText.AppendText("7"); ;
+        }
+
+        private void EightB_Click(object sender, EventArgs e)
+        {
+            CalcText.AppendText("8");
+        }
+
+        private void NineB_Click(object sender, EventArgs e)
+        {
+            CalcText.AppendText("9");
+        }
+
+        private void DecB_Click(object sender, EventArgs e)
+        {
+            
+            if (CalcText.Text.Contains("."))
+            {
+                Console.WriteLine("You already have a decomial.");
+            }
+            else
+            {
+                CalcText.AppendText(".");
+            }
+        }
+
+        private void ClearAlt_Click(object sender, EventArgs e)
+        {
+            CalcText.Text = "0";
+        }
     }
 }

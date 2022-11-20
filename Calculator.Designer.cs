@@ -58,9 +58,11 @@
             // 
             // CalcText
             // 
+            this.CalcText.BackColor = System.Drawing.SystemColors.HighlightText;
             this.CalcText.Location = new System.Drawing.Point(34, 105);
             this.CalcText.Multiline = true;
             this.CalcText.Name = "CalcText";
+            this.CalcText.ReadOnly = true;
             this.CalcText.Size = new System.Drawing.Size(572, 144);
             this.CalcText.TabIndex = 0;
             this.CalcText.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -110,6 +112,7 @@
             this.SevenB.TabIndex = 5;
             this.SevenB.Text = "7";
             this.SevenB.UseVisualStyleBackColor = true;
+            this.SevenB.Click += new System.EventHandler(this.SevenB_Click);
             // 
             // EightB
             // 
@@ -119,6 +122,7 @@
             this.EightB.TabIndex = 6;
             this.EightB.Text = "8";
             this.EightB.UseVisualStyleBackColor = true;
+            this.EightB.Click += new System.EventHandler(this.EightB_Click);
             // 
             // NineB
             // 
@@ -128,6 +132,7 @@
             this.NineB.TabIndex = 7;
             this.NineB.Text = "9";
             this.NineB.UseVisualStyleBackColor = true;
+            this.NineB.Click += new System.EventHandler(this.NineB_Click);
             // 
             // MultiB
             // 
@@ -155,6 +160,7 @@
             this.SixB.TabIndex = 11;
             this.SixB.Text = "6";
             this.SixB.UseVisualStyleBackColor = true;
+            this.SixB.Click += new System.EventHandler(this.SixB_Click);
             // 
             // FiveB
             // 
@@ -164,6 +170,7 @@
             this.FiveB.TabIndex = 10;
             this.FiveB.Text = "5";
             this.FiveB.UseVisualStyleBackColor = true;
+            this.FiveB.Click += new System.EventHandler(this.FiveB_Click);
             // 
             // FourB
             // 
@@ -173,6 +180,7 @@
             this.FourB.TabIndex = 9;
             this.FourB.Text = "4";
             this.FourB.UseVisualStyleBackColor = true;
+            this.FourB.Click += new System.EventHandler(this.FourB_Click);
             // 
             // AddB
             // 
@@ -191,6 +199,7 @@
             this.ThreeB.TabIndex = 15;
             this.ThreeB.Text = "3";
             this.ThreeB.UseVisualStyleBackColor = true;
+            this.ThreeB.Click += new System.EventHandler(this.ThreeB_Click);
             // 
             // TwoB
             // 
@@ -200,6 +209,7 @@
             this.TwoB.TabIndex = 14;
             this.TwoB.Text = "2";
             this.TwoB.UseVisualStyleBackColor = true;
+            this.TwoB.Click += new System.EventHandler(this.TwoB_Click);
             // 
             // OneB
             // 
@@ -209,6 +219,7 @@
             this.OneB.TabIndex = 13;
             this.OneB.Text = "1";
             this.OneB.UseVisualStyleBackColor = true;
+            this.OneB.Click += new System.EventHandler(this.OneB_Click);
             // 
             // equalB
             // 
@@ -227,6 +238,7 @@
             this.ClearAlt.TabIndex = 19;
             this.ClearAlt.Text = "C";
             this.ClearAlt.UseVisualStyleBackColor = true;
+            this.ClearAlt.Click += new System.EventHandler(this.ClearAlt_Click);
             // 
             // DecB
             // 
@@ -236,6 +248,7 @@
             this.DecB.TabIndex = 18;
             this.DecB.Text = ".";
             this.DecB.UseVisualStyleBackColor = true;
+            this.DecB.Click += new System.EventHandler(this.DecB_Click);
             // 
             // ZeroB
             // 
@@ -245,6 +258,7 @@
             this.ZeroB.TabIndex = 17;
             this.ZeroB.Text = "0";
             this.ZeroB.UseVisualStyleBackColor = true;
+            this.ZeroB.Click += new System.EventHandler(this.ZeroB_Click);
             // 
             // menuStrip1
             // 
@@ -254,7 +268,7 @@
             this.calculatorMenuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(782, 42);
+            this.menuStrip1.Size = new System.Drawing.Size(782, 48);
             this.menuStrip1.TabIndex = 21;
             this.menuStrip1.Text = "menuStrip1";
             // 
