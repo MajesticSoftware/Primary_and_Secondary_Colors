@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.CalcText = new System.Windows.Forms.TextBox();
-            this.SecondB = new System.Windows.Forms.Button();
-            this.Alt1 = new System.Windows.Forms.Button();
-            this.Alt2 = new System.Windows.Forms.Button();
             this.DivB = new System.Windows.Forms.Button();
             this.SevenB = new System.Windows.Forms.Button();
             this.EightB = new System.Windows.Forms.Button();
@@ -67,34 +64,6 @@
             this.CalcText.TabIndex = 0;
             this.CalcText.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // SecondB
-            // 
-            this.SecondB.Location = new System.Drawing.Point(34, 246);
-            this.SecondB.Name = "SecondB";
-            this.SecondB.Size = new System.Drawing.Size(147, 133);
-            this.SecondB.TabIndex = 1;
-            this.SecondB.Text = "2nd";
-            this.SecondB.UseVisualStyleBackColor = true;
-            this.SecondB.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // Alt1
-            // 
-            this.Alt1.Location = new System.Drawing.Point(173, 246);
-            this.Alt1.Name = "Alt1";
-            this.Alt1.Size = new System.Drawing.Size(147, 133);
-            this.Alt1.TabIndex = 2;
-            this.Alt1.Text = "+/-";
-            this.Alt1.UseVisualStyleBackColor = true;
-            // 
-            // Alt2
-            // 
-            this.Alt2.Location = new System.Drawing.Point(316, 246);
-            this.Alt2.Name = "Alt2";
-            this.Alt2.Size = new System.Drawing.Size(147, 133);
-            this.Alt2.TabIndex = 3;
-            this.Alt2.Text = "%";
-            this.Alt2.UseVisualStyleBackColor = true;
-            // 
             // DivB
             // 
             this.DivB.Location = new System.Drawing.Point(459, 246);
@@ -103,6 +72,7 @@
             this.DivB.TabIndex = 4;
             this.DivB.Text = "÷";
             this.DivB.UseVisualStyleBackColor = true;
+            this.DivB.Click += new System.EventHandler(this.DivB_Click);
             // 
             // SevenB
             // 
@@ -142,6 +112,7 @@
             this.MultiB.TabIndex = 8;
             this.MultiB.Text = "X";
             this.MultiB.UseVisualStyleBackColor = true;
+            this.MultiB.Click += new System.EventHandler(this.MultiB_Click);
             // 
             // SubB
             // 
@@ -151,6 +122,7 @@
             this.SubB.TabIndex = 12;
             this.SubB.Text = "-";
             this.SubB.UseVisualStyleBackColor = true;
+            this.SubB.Click += new System.EventHandler(this.SubB_Click);
             // 
             // SixB
             // 
@@ -190,6 +162,7 @@
             this.AddB.TabIndex = 16;
             this.AddB.Text = "+";
             this.AddB.UseVisualStyleBackColor = true;
+            this.AddB.Click += new System.EventHandler(this.AddB_Click);
             // 
             // ThreeB
             // 
@@ -223,18 +196,19 @@
             // 
             // equalB
             // 
-            this.equalB.Location = new System.Drawing.Point(459, 748);
+            this.equalB.Location = new System.Drawing.Point(173, 748);
             this.equalB.Name = "equalB";
-            this.equalB.Size = new System.Drawing.Size(147, 133);
+            this.equalB.Size = new System.Drawing.Size(433, 133);
             this.equalB.TabIndex = 20;
             this.equalB.Text = "=";
             this.equalB.UseVisualStyleBackColor = true;
+            this.equalB.Click += new System.EventHandler(this.equalB_Click);
             // 
             // ClearAlt
             // 
-            this.ClearAlt.Location = new System.Drawing.Point(173, 748);
+            this.ClearAlt.Location = new System.Drawing.Point(34, 246);
             this.ClearAlt.Name = "ClearAlt";
-            this.ClearAlt.Size = new System.Drawing.Size(147, 133);
+            this.ClearAlt.Size = new System.Drawing.Size(286, 133);
             this.ClearAlt.TabIndex = 19;
             this.ClearAlt.Text = "C";
             this.ClearAlt.UseVisualStyleBackColor = true;
@@ -242,7 +216,7 @@
             // 
             // DecB
             // 
-            this.DecB.Location = new System.Drawing.Point(316, 748);
+            this.DecB.Location = new System.Drawing.Point(316, 246);
             this.DecB.Name = "DecB";
             this.DecB.Size = new System.Drawing.Size(147, 133);
             this.DecB.TabIndex = 18;
@@ -268,7 +242,7 @@
             this.calculatorMenuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(782, 48);
+            this.menuStrip1.Size = new System.Drawing.Size(782, 40);
             this.menuStrip1.TabIndex = 21;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -278,20 +252,20 @@
             this.ColorCalc,
             this.DynoCalc});
             this.calculatorMenuToolStripMenuItem.Name = "calculatorMenuToolStripMenuItem";
-            this.calculatorMenuToolStripMenuItem.Size = new System.Drawing.Size(210, 38);
+            this.calculatorMenuToolStripMenuItem.Size = new System.Drawing.Size(210, 36);
             this.calculatorMenuToolStripMenuItem.Text = "Calculator Menu";
             // 
             // ColorCalc
             // 
             this.ColorCalc.Name = "ColorCalc";
-            this.ColorCalc.Size = new System.Drawing.Size(359, 44);
+            this.ColorCalc.Size = new System.Drawing.Size(250, 44);
             this.ColorCalc.Text = "Color";
             this.ColorCalc.Click += new System.EventHandler(this.ColorCalc_Click);
             // 
             // DynoCalc
             // 
             this.DynoCalc.Name = "DynoCalc";
-            this.DynoCalc.Size = new System.Drawing.Size(359, 44);
+            this.DynoCalc.Size = new System.Drawing.Size(250, 44);
             this.DynoCalc.Text = "Dynamite";
             this.DynoCalc.Click += new System.EventHandler(this.DynoCalc_Click);
             // 
@@ -317,9 +291,6 @@
             this.Controls.Add(this.EightB);
             this.Controls.Add(this.SevenB);
             this.Controls.Add(this.DivB);
-            this.Controls.Add(this.Alt2);
-            this.Controls.Add(this.Alt1);
-            this.Controls.Add(this.SecondB);
             this.Controls.Add(this.CalcText);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -335,9 +306,6 @@
         #endregion
 
         private System.Windows.Forms.TextBox CalcText;
-        private System.Windows.Forms.Button SecondB;
-        private System.Windows.Forms.Button Alt1;
-        private System.Windows.Forms.Button Alt2;
         private System.Windows.Forms.Button DivB;
         private System.Windows.Forms.Button SevenB;
         private System.Windows.Forms.Button EightB;
