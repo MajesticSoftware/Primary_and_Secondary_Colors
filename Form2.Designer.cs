@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dynamite));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.DynoMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.CalcMenu2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,12 +55,13 @@
             this.DynoMenu});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1122, 42);
+            this.menuStrip1.Size = new System.Drawing.Size(1122, 40);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // DynoMenu
             // 
+            this.DynoMenu.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.DynoMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.CalcMenu2,
             this.ColorMenu2});
@@ -193,6 +195,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1122, 751);
             this.Controls.Add(this.Guess);
             this.Controls.Add(this.Instructions);

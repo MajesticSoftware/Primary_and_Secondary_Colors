@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculator));
             this.CalcText = new System.Windows.Forms.TextBox();
             this.DivB = new System.Windows.Forms.Button();
             this.SevenB = new System.Windows.Forms.Button();
@@ -248,6 +249,7 @@
             // 
             // calculatorMenuToolStripMenuItem
             // 
+            this.calculatorMenuToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.calculatorMenuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ColorCalc,
             this.DynoCalc});
@@ -258,14 +260,14 @@
             // ColorCalc
             // 
             this.ColorCalc.Name = "ColorCalc";
-            this.ColorCalc.Size = new System.Drawing.Size(250, 44);
+            this.ColorCalc.Size = new System.Drawing.Size(359, 44);
             this.ColorCalc.Text = "Color";
             this.ColorCalc.Click += new System.EventHandler(this.ColorCalc_Click);
             // 
             // DynoCalc
             // 
             this.DynoCalc.Name = "DynoCalc";
-            this.DynoCalc.Size = new System.Drawing.Size(250, 44);
+            this.DynoCalc.Size = new System.Drawing.Size(359, 44);
             this.DynoCalc.Text = "Dynamite";
             this.DynoCalc.Click += new System.EventHandler(this.DynoCalc_Click);
             // 
@@ -273,6 +275,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(782, 915);
             this.Controls.Add(this.equalB);
             this.Controls.Add(this.ClearAlt);
@@ -296,6 +299,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Calculator";
             this.Text = "Calculator";
+            this.Load += new System.EventHandler(this.Calculator_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

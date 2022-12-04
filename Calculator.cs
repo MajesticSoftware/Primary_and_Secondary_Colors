@@ -199,6 +199,11 @@ namespace Primary_and_Secondary_Colors
             }
         }
 
+        private void Calculator_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void equalB_Click(object sender, EventArgs e)
         {
             compute(count);
