@@ -55,7 +55,7 @@
             this.DynoMenu});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1122, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(1122, 48);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -66,20 +66,20 @@
             this.CalcMenu2,
             this.ColorMenu2});
             this.DynoMenu.Name = "DynoMenu";
-            this.DynoMenu.Size = new System.Drawing.Size(207, 38);
+            this.DynoMenu.Size = new System.Drawing.Size(207, 40);
             this.DynoMenu.Text = "Dynamite Menu";
             // 
             // CalcMenu2
             // 
             this.CalcMenu2.Name = "CalcMenu2";
-            this.CalcMenu2.Size = new System.Drawing.Size(359, 44);
+            this.CalcMenu2.Size = new System.Drawing.Size(253, 44);
             this.CalcMenu2.Text = "Calculator";
             this.CalcMenu2.Click += new System.EventHandler(this.CalcMenu2_Click);
             // 
             // ColorMenu2
             // 
             this.ColorMenu2.Name = "ColorMenu2";
-            this.ColorMenu2.Size = new System.Drawing.Size(359, 44);
+            this.ColorMenu2.Size = new System.Drawing.Size(253, 44);
             this.ColorMenu2.Text = "Color";
             this.ColorMenu2.Click += new System.EventHandler(this.ColorMenu2_Click);
             // 
@@ -208,6 +208,7 @@
             this.Controls.Add(this.Easy);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Dynamite";
             this.Text = "Dynamite Countdown";
             this.Load += new System.EventHandler(this.Dynamite_Load);

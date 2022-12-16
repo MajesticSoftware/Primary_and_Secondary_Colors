@@ -255,14 +255,14 @@
             // DynoMenu1
             // 
             this.DynoMenu1.Name = "DynoMenu1";
-            this.DynoMenu1.Size = new System.Drawing.Size(359, 44);
+            this.DynoMenu1.Size = new System.Drawing.Size(253, 44);
             this.DynoMenu1.Text = "Dynamite";
             this.DynoMenu1.Click += new System.EventHandler(this.DynoMenu1_Click);
             // 
             // CalculatorMenu1
             // 
             this.CalculatorMenu1.Name = "CalculatorMenu1";
-            this.CalculatorMenu1.Size = new System.Drawing.Size(359, 44);
+            this.CalculatorMenu1.Size = new System.Drawing.Size(253, 44);
             this.CalculatorMenu1.Text = "Calculator";
             this.CalculatorMenu1.Click += new System.EventHandler(this.CalculatorMenu1_Click);
             // 
@@ -284,6 +284,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Color";
             this.Text = "Color";
             this.Load += new System.EventHandler(this.Form1_Load);

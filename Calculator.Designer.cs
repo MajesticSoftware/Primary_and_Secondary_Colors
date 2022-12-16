@@ -243,7 +243,7 @@
             this.calculatorMenuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(782, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(782, 48);
             this.menuStrip1.TabIndex = 21;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -254,20 +254,20 @@
             this.ColorCalc,
             this.DynoCalc});
             this.calculatorMenuToolStripMenuItem.Name = "calculatorMenuToolStripMenuItem";
-            this.calculatorMenuToolStripMenuItem.Size = new System.Drawing.Size(210, 36);
+            this.calculatorMenuToolStripMenuItem.Size = new System.Drawing.Size(210, 40);
             this.calculatorMenuToolStripMenuItem.Text = "Calculator Menu";
             // 
             // ColorCalc
             // 
             this.ColorCalc.Name = "ColorCalc";
-            this.ColorCalc.Size = new System.Drawing.Size(359, 44);
+            this.ColorCalc.Size = new System.Drawing.Size(250, 44);
             this.ColorCalc.Text = "Color";
             this.ColorCalc.Click += new System.EventHandler(this.ColorCalc_Click);
             // 
             // DynoCalc
             // 
             this.DynoCalc.Name = "DynoCalc";
-            this.DynoCalc.Size = new System.Drawing.Size(359, 44);
+            this.DynoCalc.Size = new System.Drawing.Size(250, 44);
             this.DynoCalc.Text = "Dynamite";
             this.DynoCalc.Click += new System.EventHandler(this.DynoCalc_Click);
             // 
@@ -296,6 +296,7 @@
             this.Controls.Add(this.DivB);
             this.Controls.Add(this.CalcText);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Calculator";
             this.Text = "Calculator";
